@@ -1,0 +1,52 @@
+.page-color{
+  background-color: #F7F7F7;
+}
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #819561;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.active, .collapsible:hover {
+  background-color: #819561;
+  color:white;
+  font-size: 16px;
+
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  color:black;
+  background-color: #FFFFFF;
+  padding: 15px 15px 15px 15px;
+  border: 1px solid #819561;
+}
+.title{
+  text-align: center;
+  color:black;
+}
+.title-description{
+  text-align: center;
+  color:black;
+}
+.outer-container{
+  width:80%;
+  margin-left:10%;
+  margin-top: 15px;
+}
+.fa-plus{
+  float:right;
+  margin-right: 10px;
+  color:#819561;
+}
+.outer-container .collapsible:hover .fa-plus{
+  color:#FFFFFF;
+}
