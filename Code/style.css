@@ -1,15 +1,42 @@
 .page-color{
   background-color: #F7F7F7;
+  max-width: 1140px;
 }
+
+.title{
+  text-align: center;
+  color:black;
+  font-size: 16px
+}
+
+.title-description{
+  text-align: center;
+  color:black;
+  font-size: 12px;
+}
+
+.outer-container{
+  width:80%;
+  margin-left:10%;
+  margin-top: 15px;
+}
+
+.outer-container .collapsible:hover .fa-plus{
+  color:#FFFFFF;
+}
+
 .collapsible {
   cursor: pointer;
-  padding: 18px;
+  height:35px;
   width: 100%;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 12px;
   background: #FFFFFF;
-  border: 1px solid #819561;
+  border: 0.75px solid #819561;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -17,36 +44,27 @@
 .active, .collapsible:hover {
   background-color: #819561;
   color:white;
-  font-size: 16px;
+}
 
+.collapsible:after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f067"; /* "\f067" CSS font aweseom fa-plus icon*/
+  font-weight:900;
+  color:#3D4042;
+  float: right;
+}
+
+.active:after{
+  content: "\f068";/* "\f068" CSS font aweseom fa-minus icon*/
+  color:#3D4042;
 }
 
 .content {
   display: none;
-  overflow: hidden;
   color:black;
+  font-size: 12px;
   background-color: #FFFFFF;
-  padding: 15px 15px 15px 15px;
-  border: 1px solid #819561;
+  padding: 5px 5px 5px 5px;
+  border: 0.5px solid #819561;
 }
-.title{
-  text-align: center;
-  color:black;
-}
-.title-description{
-  text-align: center;
-  color:black;
-}
-.outer-container{
-  width:80%;
-  margin-left:10%;
-  margin-top: 15px;
-}
-.fa-plus{
-  float:right;
-  margin-right: 10px;
-  color:#819561;
-}
-.outer-container .collapsible:hover .fa-plus{
-  color:#FFFFFF;
-}
+
